@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/shtriga",
     "maintainers": [
       {
@@ -16,72 +16,120 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "shtriga",
-    "name": "",
-    "aliases": [],
+    "name": "Shtriga",
+    "aliases": [
+      { "name": "Shtrigë", "language": "Albanian", "region": "Albania, Kosovo" },
+      { "name": "Strix", "language": "Latin", "meaning": "owl-witch; ancient ancestor of the term" },
+      { "name": "Striga", "language": "Late Latin / Romance", "meaning": "witch (cognate)" },
+      { "name": "Strega", "language": "Italian", "meaning": "witch (cognate)" },
+      { "name": "Strigă", "language": "Romanian", "meaning": "witch / vampiric being (cognate)" },
+      { "name": "Strzyga", "language": "Polish", "meaning": "vampiric undead being (cognate)" },
+      { "name": "Štriga", "language": "Croatian / Serbian", "meaning": "witch (cognate)" }
+    ],
     "category": "ENTITY_SPIRIT",
-    "subcategory": "Unknown",
+    "subcategory": "Vampiric witch",
     "tags": [
-      "folklore",
-      "mythology"
+      "albanian-folklore",
+      "vampiric",
+      "witch",
+      "shape-shifter",
+      "infants-targeted",
+      "balkans"
     ],
     "status": "documented",
     "description": {
-      "summary": "No description available.",
-      "full": ""
+      "summary": "The shtriga is a vampiric witch in Albanian folklore who feeds on the blood of sleeping infants. After feeding she can transform into a flying insect, and the only sure cure for her victims is a remedy obtained from the shtriga herself. Apotropaic protections include garlic, salt, the sign of the cross, and a cross of pig bone placed at a church door on Easter Sunday.",
+      "full": "The shtriga (Albanian shtrigë) is a figure of Albanian folklore, particularly of the northern Albanian highlands and Kosovo, who appears externally as an old woman but at night feeds on the blood of sleeping infants. The name descends from Latin strix (the owl-witch of Roman tradition), and the shtriga is cognate with the Italian strega, Romanian strigă, Polish strzyga, and South Slavic štriga. After feeding, the shtriga is said to transform into a flying insect — typically a moth, fly, or bee. Children whose blood she has drunk waste away unless cured; only the shtriga who attacked the child can effect a complete cure, often by being persuaded or compelled to spit into the child's mouth. The folklore emphasises strong apotropaic measures: garlic worn or hung at thresholds, the sign of the cross, holy water, salt, and — in the most famous procedure recorded by Edith Durham (1909) — a cross made from the bone of a pig placed at the church door on Easter Sunday so that any shtriga inside could not exit. In Catholic northern Albania the shtriga was held in particularly clear distinction from ordinary witches, with Edith Durham, J. G. von Hahn, and later folklorists such as Robert Elsie providing the principal ethnographic record."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Albanian shtrigë, descending from Latin strix ('screech-owl' / 'owl-witch')",
+      "meaning": "Vampiric witch / nocturnal female feeder on infants",
+      "first_use": "19th-century Albanian-language printed records; Latin strix attested in Ovid and Pliny"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Vampiric witch",
+      "subtype": "Strix-derived European witch tradition",
+      "variant": "Albanian"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "strix", "name": "Strix", "relationship": "superset", "description": "Roman owl-witch from which strega, strigoi, shtriga and cognates descend" },
+      { "id": "strigoi", "name": "Strigoi", "relationship": "similar", "description": "Romanian undead/vampiric figure cognate with shtriga" },
+      { "id": "strega", "name": "Strega", "relationship": "similar", "description": "Italian witch cognate" },
+      { "id": "strzyga", "name": "Strzyga", "relationship": "similar", "description": "Polish vampiric undead cognate" },
+      { "id": "lamia", "name": "Lamia", "relationship": "similar", "description": "Greek child-killing vampiric figure" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "features": [
+        { "feature": "Old-woman appearance", "description": "By day, the shtriga is described as an outwardly ordinary old woman of the village.", "frequency": "always" },
+        { "feature": "Pale or green eyes", "description": "Distinctive pale or green eyes, often associated with the evil eye.", "frequency": "common" },
+        { "feature": "Crooked or hooked nose", "description": "A recurrent physiognomic detail.", "frequency": "common" },
+        { "feature": "Insect form", "description": "After feeding, the shtriga transforms into a flying insect — most often a moth, fly, or bee — to depart.", "frequency": "common" }
+      ],
+      "morphology": "Theriomorphic: human (old woman) by day; insectiform after nocturnal feeding."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Blood-feeding on infants", "description": "Sucks blood from sleeping infants and small children, causing wasting illness.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Transformation to flying insect", "description": "Becomes a moth, fly, or bee to enter and leave houses.", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Healing her own victims", "description": "Only the attacking shtriga can cure her victim — typically by spitting into the child's mouth or otherwise reversing the curse.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Evil eye", "description": "Direct gaze felt to be malicious; the shtriga is associated with the syz keq (evil eye).", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["villages", "mountain settlements", "northern Albanian highlands"],
+      "patterns": [
+        "Attacks infants in their cradles at night",
+        "Returns to a discreet daytime persona within the community",
+        "May be unmasked at Easter or at church"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Northern Albanian highlands, Kosovo, and Albanian-speaking communities of North Macedonia and Montenegro; with a wider Balkan continuum of cognate figures.",
+      "continents": ["Europe"],
+      "countries": ["Albania", "Kosovo", "North Macedonia", "Montenegro"],
+      "regions": ["Northern Albanian Alps", "Malësia", "Dukagjin", "Shkodër region"]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Mid-19th century (printed)",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "J. G. von Hahn, Albanesische Studien (1854); later Edith Durham, High Albania (1909)"
+      },
+      "peak_activity_periods": [
+        { "period": "19th century–early 20th century", "description": "Period of intensive ethnographic collection in the Albanian highlands." }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Albanian highland folklore, in continuity with the broader Balkan and Romance witch-and-vampire tradition descending ultimately from Latin strix.",
+      "earliest_accounts": "Mid-19th-century records by J. G. von Hahn; early 20th-century field accounts by Edith Durham.",
+      "folklore_connections": "Cognate with strega (Italian), strigoi/strigă (Romanian), strzyga (Polish), and štriga (South Slavic); all descended from Latin strix."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1854", "event": "J. G. von Hahn publishes Albanesische Studien, including notes on northern Albanian folklore", "significance": "Earliest major academic record of Albanian folk-belief in shtriga", "source": "von Hahn (1854)" },
+      { "date": "1909", "event": "Edith Durham publishes High Albania, recording the pig-bone-cross apotropaic procedure", "significance": "Most-cited English-language ethnographic source on the shtriga", "source": "Durham (1909)" },
+      { "date": "2001", "event": "Robert Elsie publishes 'A Dictionary of Albanian Religion, Mythology and Folk Culture'", "significance": "Modern reference compendium synthesising shtriga material", "source": "Elsie (2001)" }
+    ],
+    "modern_era": "The shtriga survives as a recognisable figure in Albanian-language popular culture and in Balkan-studies scholarship, and has been adopted into Anglophone popular media (notably the television series Supernatural)."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +140,96 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "shtriga-evidence-durham-1909",
+        "type": "ethnographic record",
+        "name": "Edith Durham, High Albania",
+        "date": "1909",
+        "description": "Field-recorded accounts of shtriga belief and apotropaic procedures in the northern Albanian highlands.",
+        "status": "verified",
+        "analysis": "Foundational English-language ethnography of Albanian shtriga belief.",
+        "source": "Durham, M. E. (1909), High Albania"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Real malign witch",
+        "description": "Within Albanian highland folklore, the shtriga is a real being — a woman with witch-power obtained through envy or childlessness — capable of supernatural harm.",
+        "proponents": ["Tradition-bearers in northern Albania and Kosovo (recorded by Durham, von Hahn, Elsie)"],
+        "evidence_cited": ["Continuity of tradition", "Specific apotropaic procedures held to have demonstrably worked"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Folkloric explanation of infant illness and death",
+        "description": "The shtriga belief offers a culturally meaningful explanation for sudden infant illness, wasting, and death (including conditions later understood as SIDS, infectious disease, and malnutrition) and a mechanism (apotropaic ritual) for community response.",
+        "proponents": ["Robert Elsie", "Folklore studies of European witch beliefs"],
+        "evidence_cited": ["Convergence of shtriga reports with classes of infant illness", "Cross-cultural pattern of vampiric child-killers across Europe"]
+      },
+      {
+        "name": "Strix-derived cultural complex",
+        "description": "The shtriga is one of a family of European cognate figures (strega, strigoi, strzyga, štriga) descended from Roman strix folklore, transmitted across the Balkans and Mediterranean.",
+        "proponents": ["Comparative European folklorists"],
+        "evidence_cited": ["Linguistic descent from strix", "Parallel motifs across cognate traditions"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Northern Albanian highland (Malësor) folk tradition",
+        "Kosovar Albanian folk tradition"
+      ],
+      "stories": [
+        "Edith Durham's pig-bone-cross detection ritual (High Albania, 1909)",
+        "Recurrent village narratives of unmasked shtriga"
+      ],
+      "beliefs": "Held by tradition-bearers to be both real and historically operative; defended against by garlic, salt, the sign of the cross, holy water, and specific Easter rituals."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Edith Durham, High Albania (1909)",
+        "Robert Elsie, A Dictionary of Albanian Religion, Mythology and Folk Culture (2001)"
+      ],
+      "film_tv": [
+        "Supernatural — 'Something Wicked' (Season 1, Episode 18, 2006), in which a shtriga is the antagonist",
+        "Lost Girl — episode featuring a shtriga (Showcase, Canada)"
+      ],
       "games": [],
+      "music": [],
       "other": []
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Edith Durham", "affiliation": "Independent (Royal Anthropological Institute)", "contribution": "Early-20th-century field ethnography of northern Albania, including the shtriga", "period": "1900s–1910s" },
+      { "name": "J. G. von Hahn", "affiliation": "Austro-Hungarian consular service", "contribution": "Mid-19th-century Albanian ethnographic studies", "period": "1850s" },
+      { "name": "Robert Elsie", "affiliation": "Independent (Albanologist)", "contribution": "Modern reference syntheses of Albanian folklore", "period": "1980s–2010s" }
+    ],
+    "organizations": [
+      { "name": "Albanian Institute of Folk Culture (Instituti i Antropologjisë Kulturore dhe Studimit të Artit)", "url": "https://iakl.al", "focus": "Albanian folklore and folk culture" }
+    ],
+    "ongoing_studies": "Continuing work in Albanian folklore studies includes documentation of regional variants and the comparative-Balkan study of the strix-descended witch complex."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-shtriga", "type": "website", "title": "Shtriga", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Shtriga", "accessed": "2026-05-07" },
+    { "id": "durham-1909", "type": "book", "title": "High Albania", "authors": ["Edith Durham"], "publication": "Edward Arnold (London)", "date": "1909" },
+    { "id": "von-hahn-1854", "type": "book", "title": "Albanesische Studien", "authors": ["Johann Georg von Hahn"], "publication": "F. Mauke (Jena)", "date": "1854" },
+    { "id": "elsie-2001", "type": "book", "title": "A Dictionary of Albanian Religion, Mythology and Folk Culture", "authors": ["Robert Elsie"], "publication": "Hurst & Co. / NYU Press", "date": "2001", "isbn": "978-0814722145" }
+  ]
 }
